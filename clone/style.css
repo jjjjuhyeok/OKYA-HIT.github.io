@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+body, input, textarea, select, button {
+    color: #202124;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+
+h1 {
+    color: #202124;
+    padding-bottom: 0;
+    padding-top: 16px;
+    font-size: 24px !important;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.center_h {
+    margin: auto;
+}
+
+.outBox {width: 448px; height:500px; border:1px solid #dadce0; border-radius:6px;}
+.outBox .inputBox {position:relative; height:inherit;}
+.outBox .inputBox input[type="text"] {padding:0 10px; width:100%; height:inherit; font-size:14px; box-sizing:border-box; border:1px solid #dadce0; border-radius: 6px; outline:none;}
+.outBox .inputBox label {position:absolute; left:0; bottom:0; padding:0 7px; color:#5f6368; font-size:17px; font-weight:400; background:#fff; transform:scale(1) translate(4px, -16px); transition:all .15s; pointer-events:none;}
+.outBox.empty .inputBox input[type="text"]:focus,
+.outBox.existence .inputBox input[type="text"] {border:2px solid #1a73e8; border-radius: 6px;}
+.outBox.empty .inputBox input[type="text"]:focus + label,
+.outBox.existence .inputBox label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
+.outBox.empty .inputBox input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
+
+button.normal {
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0;
+    text-align: left;
+    border: 0;
+}
+
+.nextbtn {
+    background-color: #1a73e8;
+    width:76.31px;
+    height:36px;
+    border-radius: 4px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+}
+.nextbtn button {
+    background-color: transparent;
+    color:#ffffff;
+    border:0px;
+}
+
+.Gsans {
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+
+.createbtn {
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 601px) {
+    .outBox {width: 448px; height:500px; border:1px solid #dadce0; border-radius:6px;}
+    .outBox .inputBox {position:relative; height:inherit;}
+    .outBox .inputBox input[type="text"] {padding:0 10px; width:100%; height:inherit; font-size:14px; box-sizing:border-box; border:1px solid #dadce0; border-radius: 6px; outline:none;}
+    .outBox .inputBox label {position:absolute; left:0; bottom:0; padding:0 7px; color:#5f6368; font-size:17px; font-weight:400; background:#fff; transform:scale(1) translate(4px, -16px); transition:all .15s; pointer-events:none;}
+    .outBox.empty .inputBox input[type="text"]:focus,
+    .outBox.existence .inputBox input[type="text"] {border:2px solid #1a73e8; border-radius: 6px;}
+    .outBox.empty .inputBox input[type="text"]:focus + label,
+    .outBox.existence .inputBox label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
+    .outBox.empty .inputBox input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 99vw;
+        height: 99vh;
+    }
+}
